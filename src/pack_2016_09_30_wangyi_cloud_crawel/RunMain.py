@@ -23,7 +23,7 @@ if __name__ == '__main__':
         songUrlGetter = SongUrlGetter(song);
         #歌曲下载地址
         songUrl = songUrlGetter.getSongUrl2();
-        try:
+        try: 
             urlretrieve(songUrl['url'],filename='E:\\temp\\music\\' + song['name'] + '.mp3');
             print('%s download complete' % song['name'])
         except:
