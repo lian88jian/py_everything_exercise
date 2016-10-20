@@ -26,13 +26,13 @@ def getFriend(userSimpleSpell):
         if f['RemarkPYQuanPin'] == userSimpleSpell:
             return f;
     for f in friends:
+        if f['PYQuanPin'] == userSimpleSpell:
+            return f;
+    for f in friends:
         if userSimpleSpell in f['RemarkPYQuanPin']:
             return f;
     for f in friends:
         if check_string_contain(f['RemarkPYQuanPin'],userSimpleSpell): 
-            return f;
-    for f in friends:
-        if f['PYQuanPin'] == userSimpleSpell:
             return f;
     for f in friends:
         if userSimpleSpell in f['PYQuanPin']:
