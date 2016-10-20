@@ -7,7 +7,7 @@ from pip._vendor.distlib.compat import raw_input
 # https://github.com/littlecodersh/EasierLife/tree/master/Plugins/Tuling
 
 try:
-    with open('tuling.json') as f: key = json.loads(f.read())['key']
+    with open('config.json') as f: key = json.loads(f.read())['key']
 except:
     key = '' # if key is '', get_response will return None
     # raise Exception('There is something wrong with the format of you plugin/config/tuling.json')
